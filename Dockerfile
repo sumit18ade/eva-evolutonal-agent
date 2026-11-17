@@ -8,7 +8,7 @@
 # immutable from inside the container and lets you inspect what EVA does on the
 # host under ./data/.
 
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 # Unprivileged, fixed UID, no login shell.
 RUN useradd --create-home --uid 10001 --shell /usr/sbin/nologin eva \
